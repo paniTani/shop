@@ -1,0 +1,744 @@
+@font-face {
+    font-family: High Tower Text; /* Имя шрифта */
+    src: url('../fonts/high-tower-text.ttf'); /* Путь к файлу со шрифтом */
+}
+@font-face {
+    font-family: Neutra; /* Имя шрифта */
+    src: url('../fonts/NeutraText-Book.ttf '); /* Путь к файлу со шрифтом */
+}
+
+*{
+    box-sizing: border-box;
+}
+div {
+    display: block;
+}
+a {
+    text-decoration: none;
+}
+body{
+    margin: 0;
+    padding: 0;
+    min-width: 320px;
+    font-family: High Tower Text;
+    font-size: 14px;
+}
+/*HEADER*/
+header{
+    width: 100%;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.75);
+    z-index: 1;
+}
+.masthead{
+    width: 960px;
+    margin: 0 auto;
+    display: table;
+}
+.menuBlock{
+    width: 100%;
+    float: right;
+    margin-right:7px;
+}
+/*.bars{
+    display: none;
+}*/
+.menuBlock .bars{
+    display: none;
+}
+.logo{
+    float: left;
+    display: block;
+}
+.logo img{
+    display: block;
+}
+
+/*.logo-small, .logo-s-small{
+    display: none;
+}*/
+
+
+
+/*.logo{
+    display: block;
+}*/
+.logo-small{
+    display: none;
+    float: left;
+}
+#loginCart{
+    float: right;
+    clear: right;
+}
+#loginCart ul{
+    list-style-type: none;
+    margin-top: 16px;
+    float: right;
+}
+#loginCart li{
+    display: inline;
+}
+#loginCart li:hover{
+    opacity: 0.5;
+}
+#loginCart a{
+    font-size: 14px;
+    text-decoration: none;
+    color: #303030;
+}
+nav{
+    float: right;
+    clear: right;
+}
+nav ul{
+    float: left ;
+    list-style-type: none ;
+    margin: 3px 0 0 0;
+}
+nav li{
+    display: inline;
+    float: left;
+    padding: 0 0 0 25px;
+}
+nav a{
+    text-decoration: none;
+    color: #303030;
+}
+nav a:hover{
+    color: #9e8e8e;
+}
+.slider{
+    width:100%;
+    height: auto;
+    overflow: hidden ;
+    float: left;
+}
+.slide img{
+    width:100%;
+    display: block;
+}
+.slide.activeSlide{
+    display: block;
+}
+.slide{
+    display: none;
+}
+
+/*Main Block*/
+.main{
+    width: 100%;
+    float: left;
+    position: relative;
+    background-image: url('../img/bg_new.png'),
+        url('../img/bg_new.png'),
+        url('../img/HorizontalGrain-BG-.jpg');
+    background-color: transparent;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: -150% -100%, 170% 215%, 100% 100%;
+    background-size: auto, auto, cover;
+    padding-bottom: 50px;
+}
+.container{
+    width: 960px;
+    margin: 0 auto;
+}
+.container:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+.bodyMob{
+    background-color: rgba(255, 255, 255, 0.8) ;
+    display: inline-block;
+    float: left;
+    margin-top: 50px;
+    width: 100%;
+    color: #4b4b4b;
+}
+.bodyMob h3 {
+    font: 36px/36px "High Tower Text";
+    margin: 22px 0 0;
+}
+.bodyMobBlocks{
+    width: auto;
+    float: left;
+    margin: 34px 37px 25px 33px;
+    text-align: center;
+}
+.bodyMobBlocks:hover{
+    cursor: pointer;
+    opacity: 0.85;
+}
+.bodyMob img{
+    border: 1px solid #4b4b4b;
+    display: block;
+}
+.visitUs p, .shipping p{
+    margin-top: 6px;
+}
+.newsLetter p{
+    margin-top: 7px;
+}
+.newsLetter input[type=text]{
+    margin-top: 3px;
+}
+.signUp{
+    width: 240px;
+    height: 160px;
+    background-color: #e9e8e8;
+    font-size: 18px;
+    margin: 0 auto;
+}
+.signUp .sign{
+    width: 68px;
+    margin: 0 auto;
+}
+.signUp p{
+    text-align: left;
+    margin: 0 0 0 14px;
+}
+.signUp input{
+    width: 209px;
+    height: 28px;
+    border-left: 1px solid #d2d2d2;
+    margin-top: 2px;
+}
+.signUp input:focus{
+    outline-color: #bbb;
+}
+.signUp .name{
+    margin-top: 3px;
+}
+.signUp .mail{
+    margin-top: 6px;
+}
+.shipping{
+    margin: 34px 30px 25px 38px;
+}
+
+/* FEATURETTE */
+.featurette{
+    width: 960px;
+    margin-top: 50px;
+    display: block ;
+    float: left;
+    color: #fff;
+}
+.featuretteMini{
+    width: 49%;
+    float: left;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+.featuretteMini:nth-child(2){
+    margin-left: 19px;
+}
+.featuretteImgLeft{
+    background: url('../img/2010_D2Columbia.jpg');
+}
+.featuretteImgRight{
+    background: url('../img/2012ChaleurEstateWhite.jpg');
+}
+.featuretteHeader{
+    background-color: #2d2d2d;
+    padding: 16px;
+}
+.featuretteHeader p{
+    margin: 0;
+    font-size: 24px;
+    text-align: center;
+}
+.featuretteContainer{
+    background-color: #2d2d2d;
+    margin-top: 198px;
+    padding: 4px 23px;
+    font-size: 14px;
+}
+.featuretteText p{
+    margin: 0;
+    line-height: 1.8;
+    padding-top: 9px;
+    font-family: Neutra;
+}
+.purchaseGroup{
+    display: inline-block;
+    width: 100%;
+    font-size: 18px;
+}
+.priceBottleText, .qtyBuy, .crestDark{
+    width: 33.3%;
+    float: left;
+}
+.priceBottleText .price{
+    margin: 25px 0;
+}
+.priceBottleText .bottle{
+    margin: -21px -1px;
+}
+.priceBottleText .money{
+    margin: 28px 0;
+}
+.qtyBuy p{
+    float: left;
+    font-family: "Times New Roman";
+    margin-top: 23px;
+    margin-left: 21px;
+}
+.qtyBuy input{
+    width: 50px;
+    height: 30px;
+    float: left;
+    margin: 18px 0 0 7px;
+}
+.qtyBuy input[type=submit]{
+    width: 100px;
+    height: 30px;
+    float: left;
+    background-color: #2d2d2d;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    margin: 13px;
+}
+.qtyBuy .buyNow{
+    margin: 16px 20px;
+}
+.qtyBuy .buyNow:hover{
+    background-color: #4c4c4c;
+}
+.crestDark img{
+    margin: 11px 23px 0 16px;
+}
+/*DISCOVER*/
+.discover{
+    width: 960px;
+    margin-top: 50px;
+    float: left;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #4b4b4b;
+    display: inline-block ;
+}
+.discover h1{
+    font-size: 60px;
+    margin: 0;
+    text-align: center;
+    font-weight: normal;
+}
+.discoverImgs .delille{
+    float: left;
+    margin: 21px 0 37px 37px;
+}
+.discoverImgs .delille:hover{
+    opacity: 0.7;
+    cursor: pointer;/*or wrap "img" in "a" ?*/
+}
+/*Footer*/
+footer{
+    width: 100%;
+    background-color: #2d2d2d;
+    float: left;
+    color: #fff;
+    padding: 35px 0;
+    font-family: Neutra;
+}
+.footerContainer{
+    width: 960px;
+    margin: 30px auto;
+    display: table;
+}
+.footerBlocks{
+    float: left;
+    width: 33.3%;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+.about, .geiIn, .keepUp{
+    border-bottom: 1px solid #fff;
+    font-size: 18px;
+}
+.aboutUs ul{
+    margin: 5px 0 0 0;
+    padding: 0;
+}
+.aboutUs li{
+    list-style-type: none;
+    line-height: 1.4;
+}
+.aboutUs a{
+    text-decoration: none;
+    color: #fff;
+}
+.aboutUs a:hover{
+    text-decoration: underline;
+
+}
+.getInTouch p{
+    display: inline-block;
+}
+.letter img{
+    margin: 11px 18px 0 3px;
+    float: left;
+}
+.letter p{
+    margin-top: 16px;
+}
+.phone img{
+    float: left;
+    margin: 7px 36px 0 17px;
+}
+.phone p{
+    margin-top: 17px;
+}
+.SMLogos{
+    margin: 17px 0 0 2px;
+}
+.keepLogos{
+    width: 33.3%;
+    float: left;
+    margin: 0 auto;
+}
+.social{
+    width: 45px;
+    height: 45px;
+    /*line-height: 40px;*/
+    background-color: rgb(255, 255, 255);
+    /*float: left;*/
+    border-radius: 50%;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.social a{
+    color: #2d2d2d;
+    text-decoration: none;
+}
+.social a i{
+    font-size: 25px;
+    margin: 10px 13px;
+
+}
+
+/*.SMLogos a{*/
+/*text-decoration: none;*/
+/*}*/
+.SMLogos .social:nth-child(2){
+    margin: 0 85px;
+}
+.SMLogos a:hover{
+    opacity: 0.9;
+}
+
+@media (min-width: 320px) and (max-width: 1024px) {
+
+    /*HEADER*/
+    .masthead{
+        width: 100%;
+    }
+    .menuBlock{
+        height: 40px;
+        margin: 0;
+    }
+    .menuBlock .bars{
+        display: block;
+        width: 40px;
+        height: 40px;
+        float: left;
+        line-height: 40px;
+        text-align: center;
+        z-index: 1;
+    }
+    .bars:hover{
+        cursor: pointer;
+        opacity: 0.5;
+    }
+    .logo, .logo-s-small{
+        display: none;
+    }
+    .logo-small{
+        display: block ;
+        margin: 12px 0 0 12px;
+    }
+    #loginCart ul{
+        margin: 12px 5px 0 0;
+    }
+    nav{
+        width: 100%;
+        text-align: center;
+    }
+    nav ul{
+        display: none;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    nav li{
+        width: 100%;
+        height: 35px;
+        line-height: 35px;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.8);
+    }
+    nav li:hover{
+        background-color: rgba(233,232,232, 0.9);
+    }
+    nav a{
+        color: #303030;
+    }
+    nav li:hover a{
+        color: #3e3e3e ;
+    }
+
+    /*Main Block*/
+    .main{
+        max-width: 100%;
+    }
+    .container{
+        width: 90%;
+    }
+    /*BodyMob*/
+    .mainBlocks{
+        margin: 20px auto;
+    }
+
+    .bodyMob{
+        /*margin: 0 auto;*/
+        width: 50%;
+        float: none;
+        /*float: left;*/
+        display: table;
+    }
+    .bodyMobBlocks{
+        float: left;
+        width: 100%;
+        margin: 15px auto;
+    }
+    .bodyMobBlocks img{
+        margin: 0 auto;
+        width: 50%;
+    }
+    .bodyMobBlocks .signUp{
+        width: 50%;
+    }
+    .signUp input{
+        width: 90%;
+    }
+    /* FEATURETTE */
+    .featurette{
+        /*margin: 0 auto;*/
+        width: 100%;
+        float: left;
+        display: block;
+    }
+    .featuretteMini{
+        width: 470px;
+        margin: 10px auto;
+        float: none;
+        display: table;
+    }
+    .featuretteMini:nth-child(2){
+        margin: 0 auto;
+    }
+    /*discover*/
+    .discover{
+        width: 50%;
+        float: none;
+        /*margin: 10px auto;*/
+        /*float: left;*/
+        display: table;
+        padding:20px 0;
+    }
+    .discover h1{
+        font-size: 50px;
+    }
+    .discoverImgs .delille{
+        width: 100%;
+        margin: 15px 0 0 0;
+        float: left ;
+    }
+    .delille img{
+        margin: 0 auto;
+        width: 50%;
+        display: table;
+    }
+
+    /*footer*/
+    /*    footer{
+            padding: 25px 0 0 0;
+        }*/
+    .footerContainer{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .footerBlocks{
+        width: 100%;
+        float: left;
+        padding: 0;
+        margin-top: 15px;
+    }
+    .aboutUs{
+        width: 100%;
+    }
+    .aboutUs li{
+        line-height: 2.2;
+        text-align: center;
+    }
+    .aboutUs li:hover{
+        background-color: #404040;
+    }
+    .aboutUs li:hover a{
+        text-decoration: underline;
+    }
+    .getInTouch{
+        width: 100%;
+        float: left;
+        /*margin: 0;*/
+    }
+    .letter, .phone{
+        float: left;
+        width: 50%;
+    }
+    .letter img, .phone img{
+        margin: 10px 3px;
+    }
+    .SMLogos{
+        margin: 10px auto;
+        text-align: center;
+        display: table;
+        width: 100%;
+    }
+    .SMLogos a{
+        float: left;
+        width: 33%;
+    }
+    .SMLogos a:nth-child(2){
+        margin: 0;
+    }
+}
+
+@media (min-width : 481px) and (max-width : 767px) {
+    /*main*/
+    .bodyMob{
+        width: 75%;
+        float: none;
+    }
+
+    .discover{
+        width: 75%;
+        float: none;
+    }
+
+
+
+
+    /*FOOTER*/
+    .letter, .phone{
+        float: left;
+        width: 50%;
+    }
+    .letter img, .phone img{
+        margin: 10px 3px;
+    }
+}
+
+@media screen and (min-width : 320px) and (max-width : 480px){
+
+    /*HEADER*/
+    .bars{
+        text-align: center;
+        width: 36px;
+    }
+    .logo-small{
+        width: 45%;
+        margin: 12px 0 0 0;
+    }
+    .logo-small img{
+        width: 100%;
+    }
+    #loginCart .login{
+        margin: 11px;
+        padding: 0;
+    }
+    #loginCart a{
+        font-size: 12px;
+    }
+    .menu li{
+        padding: 0;
+        font-size: 12px;
+    }
+
+    /*MAIN*/
+    .main{
+        padding-bottom: 10px;
+    }
+    .bodyMob{
+        width: 100%;
+        float: left;
+    }
+    .bodyMob h3{
+        font: 20px/20px "High Tower Text";
+    }
+
+    /*FEATURETTE*/
+    .featuretteMini{
+        width: 100%;
+    }
+    .featuretteImg{
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .featuretteHeader{
+        padding: 8px;
+    }
+    .featuretteHeader p{
+        font-size: 16px;
+    }
+    .featuretteContainer{
+        margin-top: 44%;
+        padding: 0 12px;
+        font-size: 12px;
+    }
+    .featuretteText p{
+        padding: 0;
+    }
+    .purchaseGroup{
+        font-size: 14px;
+    }
+    .qtyBuy{
+        width: 50%;
+        margin: 10px;
+    }
+    .qtyBuy p{
+        margin: 20px 0 0 0;
+    }
+    .qtyBuy input[type=text]{
+        margin: 12px 0 0 7px;
+    }
+    .qtyBuy input[type=submit]{
+        margin: 25px 0 0 0;
+        font-size: 16px;
+        border: 1px solid #fff;
+        border-radius: 7px;
+    }
+    .crestDark{
+        display: none;
+    }
+    /*DISCOVER*/
+    .discover{
+        width: 100%;
+        float: left;
+    }
+    .discover h1{
+        font-size: 36px;
+    }
+
+    /*FOOTER*/
+    .letter, .phone{
+        width: 90%;
+        margin-left: 5%;
+        text-align: right;
+    }
+    .SMLogos{
+        margin-top: 5px;
+    }
+}
+
